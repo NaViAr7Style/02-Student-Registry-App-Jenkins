@@ -2,8 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Greetings') {
             steps {
+                bat 'Hello, world!'
             }
         }
     }
