@@ -8,6 +8,12 @@ pipeline {
             }
         }
 
+        stage('Add audit tests') {
+            steps {
+                bat 'npm audit'
+            }
+        }
+
         stage('Run Integration Tests') {
             steps {
                 bat 'npm test'
