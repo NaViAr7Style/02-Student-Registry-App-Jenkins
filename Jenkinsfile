@@ -8,7 +8,7 @@ pipeline {
             }
         }
 
-        stage('Add audit tests') {
+        stage('Run Audit Tests') {
             steps {
                 bat 'npm audit'
             }
